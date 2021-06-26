@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Graphics/Projectile.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Projectile.gdns" type="Script" id=2]
+
+[node name="Projectile" type="KinematicBody2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+scale = Vector2( 1, 1 )
+enabled = true
+cast_to = Vector2( 50, 0 )
+collision_mask = 12
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 1.5708
+scale = Vector2( 5, 5 )
+texture = ExtResource( 1 )

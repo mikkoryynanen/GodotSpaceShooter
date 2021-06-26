@@ -1,0 +1,10 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(505,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Player.cpp
+  Root.cpp
+  Generating Code...
+Player.obj : error LNK2019: unresolved external symbol "public: __thiscall godot::String::String(char const *)" (??0String@godot@@QAE@PBD@Z) referenced in function "public: void __thiscall godot::Player::HandleInput(void)" (?HandleInput@Player@godot@@QAEXXZ)
+Player.obj : error LNK2019: unresolved external symbol "private: __thiscall godot::Input::Input(void)" (??0Input@godot@@AAE@XZ) referenced in function "public: static class godot::Input * __cdecl godot::Input::get_singleton(void)" (?get_singleton@Input@godot@@SAPAV12@XZ)
+Player.obj : error LNK2019: unresolved external symbol "public: bool __thiscall godot::Input::is_action_pressed(class godot::String)const " (?is_action_pressed@Input@godot@@QBE_NVString@2@@Z) referenced in function "public: void __thiscall godot::Player::HandleInput(void)" (?HandleInput@Player@godot@@QAEXXZ)
+Player.obj : error LNK2001: unresolved external symbol "private: static class godot::Input * godot::Input::_singleton" (?_singleton@Input@godot@@0PAV12@A)
+C:\Projects\godot-games-cpp\godot-cpp\bin\libgodot-cpp.windows.debug.64.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+..\..\..\Godot\DLLs\SpaceShooterCpp.dll : fatal error LNK1120: 4 unresolved externals

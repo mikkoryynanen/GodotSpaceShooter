@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommand>$(TargetPath)</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-e --path C:\Projects\godot-games-cpp\SpaceShooter\Godot\DLLs</LocalDebuggerCommandArguments>
+    <LocalDebuggerAttach>true</LocalDebuggerAttach>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommand>$(TargetPath)</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-e --path C:\Projects\godot-games-cpp\SpaceShooter\Godot\DLLs</LocalDebuggerCommandArguments>
+    <LocalDebuggerAttach>true</LocalDebuggerAttach>
+  </PropertyGroup>
+</Project>
