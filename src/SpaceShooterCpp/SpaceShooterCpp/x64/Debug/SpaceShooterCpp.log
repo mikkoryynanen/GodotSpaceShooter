@@ -1,3 +1,12 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(505,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Enemy.cpp
+C:\Projects\godot-games-cpp\SpaceShooter\src\SpaceShooterCpp\SpaceShooterCpp\Enemy.cpp(25,19): warning C4244: 'argument': conversion from 'const int' to 'real_t', possible loss of data
+C:\Projects\godot-games-cpp\SpaceShooter\src\SpaceShooterCpp\SpaceShooterCpp\Enemy.cpp(34,23): warning C4305: 'argument': truncation from '__int64' to 'int'
+C:\Projects\godot-games-cpp\SpaceShooter\src\SpaceShooterCpp\SpaceShooterCpp\Enemy.cpp(34,14): warning C4309: 'argument': truncation of constant value
+  GodotLibrary.cpp
+  Player.cpp
   Projectile.cpp
+  UIManager.cpp
+  Generating Code...
+     Creating library ..\..\..\Godot\DLLs\LibSpaceShooterCpp-x64-Debug.lib and object ..\..\..\Godot\DLLs\LibSpaceShooterCpp-x64-Debug.exp
   SpaceShooterCpp.vcxproj -> C:\Projects\godot-games-cpp\SpaceShooter\Godot\DLLs\LibSpaceShooterCpp-x64-Debug.dll

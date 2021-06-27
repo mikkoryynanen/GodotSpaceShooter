@@ -1,4 +1,5 @@
 #include "Enemy.h"
+#include "UIManager.h"
 
 using namespace godot;
 
@@ -26,6 +27,12 @@ void Enemy::_process(float delta)
 	move_and_slide(motion);
 
 	//shooter->Process(*rootNode, get_position(), delta);
+
+	lifeTime += delta;
+	if (lifeTime > 30)
+	{
+		TakeDamage(INT64_MAX);
+	}
 }
 
 void Enemy::TakeDamage(int damage)
@@ -35,6 +42,7 @@ void Enemy::TakeDamage(int damage)
 
 Enemy::Enemy()
 {
+	lifeTime = 0.0f;
 }
 
 Enemy::~Enemy()

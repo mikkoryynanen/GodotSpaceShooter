@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Graphics/PlayerShip.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/Player.gdns" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -13,10 +14,17 @@ collision_mask = 0
 script = ExtResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -0.218067, -0.121374 )
 offset = Vector2( 250, 0 )
 current = true
 zoom = Vector2( 2, 2 )
+
+[node name="UI" parent="Camera2D" instance=ExtResource( 2 )]
+anchor_left = 1.0
+anchor_bottom = 0.0
+margin_left = -140.0
+margin_top = -108.0
+margin_right = -140.0
+margin_bottom = -108.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708

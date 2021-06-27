@@ -30,6 +30,8 @@ void Projectile::_ready()
 {
 	raycast = (RayCast2D*)get_node("RayCast2D");
 	raycast->add_exception(this);
+
+	uiManager = (UIManager*)get_node("root/main/Player/Camera2D/UI");
 }
 
 void Projectile::_process(float delta)
@@ -46,6 +48,17 @@ void Projectile::_process(float delta)
 			e->queue_free();
 		}
 
+		if(uiManager != nullptr)
+			uiManager->UpdatePoints();
+
 		queue_free();
 	}
+}
+
+godot::Projectile::Projectile()
+{
+}
+
+godot::Projectile::~Projectile()
+{
 }

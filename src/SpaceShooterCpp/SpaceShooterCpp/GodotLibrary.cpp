@@ -1,7 +1,9 @@
-#include "Player.h"
 #include "Projectile.h"
-#include "Enemy.h"
 #include "KinematicEntity.h"
+#include "Player.h"
+#include "Enemy.h"
+#include "EnemySpawner.h"
+#include "UIManager.h"
 
 using namespace godot;
 
@@ -18,10 +20,14 @@ extern "C" void GDN_EXPORT godot_gdnative_terminate(godot_gdnative_terminate_opt
 extern "C" void GDN_EXPORT godot_nativescript_init(void* handle)
 {
 	Godot::nativescript_init(handle);
+
 	register_class<Projectile>();
 
 	// Entities
 	register_class<KinematicEntity>();
 	register_class<Player>();
 	register_class<Enemy>();
+
+	register_class<EnemySpawner>();
+	register_class<UIManager>();
 }
